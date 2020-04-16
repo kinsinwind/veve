@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="#56abe4"
+    tools:context=".activity.EditNickNameActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/titlebar"></include>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:text="完成"></TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#EFEFEF">
+
+        <EditText
+            android:id="@+id/nickNameForEditNickName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFF"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:textSize="20sp"></EditText>
+
+        <TextView
+            android:id="@+id/fontNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/20"
+            android:layout_below="@+id/nickNameForEditNickName"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"></TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

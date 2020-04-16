@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="#56abe4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#56abe4"
+        >
+        <ImageView
+            android:id="@+id/goA"
+            android:onClick="goAddFriend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/add_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"></ImageView>
+
+        <ImageView
+            android:id="@+id/mainHeadIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            ></ImageView>
+
+
+        <TextView
+            android:id="@+id/showCurrentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#505050"
+            android:text="kinsin"
+            android:layout_toRightOf="@+id/mainHeadIcon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="消息列表"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            ></TextView>
+
+        <ImageView
+            android:id="@+id/addBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/add_white3"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="#FFF">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipereLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ListView
+                android:id="@+id/friendListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#EFEFEF"
+                android:dividerHeight="1px"
+                ></ListView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/popShade"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:visibility="gone"></View>
+
+</RelativeLayout>

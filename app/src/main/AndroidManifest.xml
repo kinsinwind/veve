@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kinsin.demowebsockets">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/veve_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.RequestFriendDetailsActivity"></activity>
+        <activity android:name=".activity.SetHeadIconActivity" />
+        <activity android:name=".activity.EditNickNameActivity" />
+        <activity android:name=".activity.DataEditActivity" />
+        <activity android:name=".activity.PersonalActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.TestActivity" />
+
+        <service android:name=".services.SocketService" />
+
+        <activity android:name=".activity.SearchFriendActivity" />
+        <activity android:name=".activity.MainActivity"
+            android:launchMode="singleInstance"/>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+<!--        之前ChatDetails的启动模式为singleTop，我现在忘了为啥要这么干了，改成标准模式，测试了几次，没出现问题-->
+        <activity
+            android:name=".activity.ChatDetailsActivity"
+            android:launchMode="standard"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.SplashActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

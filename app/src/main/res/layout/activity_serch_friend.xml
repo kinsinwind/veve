@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchFriendActivity"
+    android:background="#56abe4"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#56abe4"
+        >
+
+        <ImageView
+            android:onClick="back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp"
+            ></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="FriendsList"
+            android:layout_centerInParent="true"
+            ></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchFriendEdit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit"
+                android:layout_margin="10dp"
+                android:hint="账号"
+                android:paddingLeft="20dp"
+                ></EditText>
+
+            <Button
+                android:id="@+id/searchFriendBtn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="搜索"
+                android:background="@drawable/btn_1"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                ></Button>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#000"
+            android:layout_marginTop="120dp"></View>
+
+        <RelativeLayout
+            android:id="@+id/searchItem"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="140dp"
+            android:background="#FFFFFF"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/searchNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:maxWidth="200dp"
+                android:textColor="#000"
+                android:textSize="24sp"
+                android:gravity="center_vertical"
+                android:text="kinsin"></TextView>
+
+            <TextView
+                android:id="@+id/searchAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:maxWidth="200dp"
+                android:textColor="#505050"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:text="1316054361"></TextView>
+
+            <ImageView
+                android:id="@+id/searchAddBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/add_use"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"></ImageView>
+
+            <TextView
+                android:id="@+id/alreadySend"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/gray_circle"
+                android:textColor="#FFF"
+                android:text="已发送"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                ></TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

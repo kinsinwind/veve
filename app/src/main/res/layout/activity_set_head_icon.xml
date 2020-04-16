@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context=".activity.SetHeadIconActivity">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/back"
+        android:layout_marginTop="15dp"
+        android:onClick="back"
+        ></ImageView>
+
+    <ImageView
+        android:id="@+id/headIconForSetHeadIcon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TestActivity"
+    android:background="#CDCDCD">
+
+
+    <Button
+        android:onClick="onclick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_2"
+        android:text="发送通知"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        ></Button>
+    <Button
+        android:onClick="test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_2"
+        android:text="发送通知2"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        ></Button>
+    <Button
+        android:onClick="test2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_2"
+        android:text="发送通知2"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180dp"
+        ></Button>
+
+</RelativeLayout>
